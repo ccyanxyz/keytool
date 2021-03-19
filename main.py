@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import os
 import sys
 import json
@@ -113,7 +115,7 @@ if __name__ == "__main__":
         init(fname, key)
     if sys.argv[2] == 'put':
         label = sys.argv[3]
-        secret = input('secret:')
+        secret = input('secret: ')
         put(fname, key, label, secret)
     elif sys.argv[2] == 'get':
         label = sys.argv[3]
